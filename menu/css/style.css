@@ -1,0 +1,114 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+
+/* Global properties ======================================================== */
+html {width:100%;}
+
+body { 	 
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:100%; 
+	color:#9d9d9d;
+	min-width:1060px;
+	background:#FFF;
+}
+
+.bg {width:100%; background:url(../images/bg-top.jpg) center 0 no-repeat;}
+
+.main {
+	width:0px; 	
+	padding:0;
+	margin:0 auto;
+	font-size:13px;
+	line-height:18px;
+}
+
+a {color:#1799cf; outline:none;}
+a:hover {text-decoration:none;}
+
+
+
+.menu li a,
+.list-1 li a,
+.list-2 li a,
+.link,
+.button,
+.logo {text-decoration:none;}	
+
+
+.button {
+	display:inline-block; 
+	padding:5px 25px 7px 23px;
+	color:#fff; 
+	background:#5b5b5b;
+	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	line-height:16px;
+}
+	
+	.button:hover {background:#969696;}
+
+.list-1 { margin-top:-3px; padding-right:15px;}
+
+.list-1 li {
+	text-transform:uppercase;
+}
+	.list-1 li a {
+		line-height:43px;
+		font-size:24px;
+		display:block;
+		color:#353535;
+		font-family: 'Open Sans Condensed', sans-serif;
+		background:url(../images/marker-4.png) 10px -1200px no-repeat;
+		padding:1px 0 0px 48px;
+	}
+		.list-1 li a:hover {
+			color:#fff;
+			background-position:10px 12px;
+			background-color:#B20000;
+		}
+
+.list-2 li {
+	padding:13px 0 14px 0;
+	background:url(../images/line-5.gif) left bottom repeat-x;
+}
+	.list-2 li.first {
+		padding:7px 0 14px 0;
+	}
+	.list-2 li span { display:block; margin-bottom:12px;}
+	.list-2 li a {
+		display:inline-block; 
+		color:#262626;
+		font-size:16px;
+		line-height:20px;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+		.list-2 li a:hover {text-decoration:underline;}
+	.list-2 .last {background:none; padding-bottom:0;}
+
+.link:hover {text-decoration:underline;} 
+
+.link-1 {
+	display:inline-block; 
+	font-size:14px; 
+	padding-right:8px; 
+	background:url(../images/marker-3.gif) right 8px no-repeat;
+}
+.link-1:hover {color:#fff;} 
+
+			.list-3 li {
+				font-size:13px;
+				line-height:18px;
+				padding:6px 0 6px 12px;
+				background:url(../images/marker-5.png) 0 12px no-repeat;
+			}	
+			.list-3 li a {
+				color:#343434;
+				display:inline-block;
+				text-decoration:none;
+			}
+			.list-3 li a:hover {
+				text-decoration:underline;	
+			}
+			
