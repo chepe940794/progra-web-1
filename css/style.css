@@ -23,6 +23,7 @@
 }
 
 #menu-margin{
+	width: 250px;
 	float: left;
 	margin-top: 120px;
 	margin-left: -10px;
@@ -130,9 +131,10 @@ input:-moz-placeholder {
 }
 
 #div-table{
+	width: 55%;
 	float: right;
 	margin-right: 12%;
-	margin-top: 45px;
+	margin-top: -180px;
 }
 #b1{
   border: 1px solid #999;
@@ -152,4 +154,36 @@ input:-moz-placeholder {
 	float: right;
 	margin-top: 50px;
 	margin-right: 55%;
+}
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  #main-editor{
+  	margin-left: 20%;
+  	margin-top: -600px;
+  	margin-bottom: 20%;
+  }
+  #para-asunto{
+  	margin: 30%;
+  	margin-top: -150px;
+  }
+ #img-correo{
+ 	margin-top: 25%;
+ }
+#img-log-off{
+	margin-top: 15%;
+  }
+
+
+ 
+#footer {
+    width: 100%;
+    height: 71px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

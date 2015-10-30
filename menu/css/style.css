@@ -16,7 +16,7 @@ body {
 .bg {width:100%; background:url(../images/bg-top.jpg) center 0 no-repeat;}
 
 .main {
-	width:0px; 	
+	width:1060px; 	
 	padding:0;
 	margin:0 auto;
 	font-size:13px;
@@ -66,7 +66,7 @@ a:hover {text-decoration:none;}
 		.list-1 li a:hover {
 			color:#fff;
 			background-position:10px 12px;
-			background-color:#B20000;
+			background-color:#d32f2f;
 		}
 
 .list-2 li {
