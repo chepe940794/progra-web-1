@@ -16,10 +16,10 @@
 	margin-top: 50px;
 }
 
-#form{
-	float: right;
-	margin-right: 200px;
-	margin-top: 50px;
+#form-crear-cuenta{
+	float: left;
+	margin-top: 100px;
+	
 }
 
 #menu-margin{
@@ -36,99 +36,7 @@
 	margin-right: 250px;
 }
 
-@import "compass/css3";
 
-/***********************
- * Essential Structure *
- ***********************/
-.flexsearch--wrapper {
-	height: none;
-	width: 800px;
-	max-width: 100%;
-	overflow: hidden;
-	background: transparent;
-	margin: 0;
-	position: static;
-}
-	
-.flexsearch--form {
-	overflow: hidden;
-	position: relative;
-}
-	
-.flexsearch--input-wrapper {
-	padding: 0 66px 0 0; /* Right padding for submit button width */
-	overflow: hidden;
-}
-
-.flexsearch--input {
-  width: 100%;
-}
-
-/***********************
- * Configurable Styles *
- ***********************/
-.flexsearch {
-  padding: 0 25px 0 400px; /* Padding for other horizontal elements */
-}
-
-.flexsearch--input {
-  -webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
- 	height: 60px;
-  padding: 0 46px 0 10px;
-	border-color: #888;
-  border-radius: 35px; /* (height/2) + border-width */
-  border-style: solid;
-	border-width: 5px;
-  margin-top: 15px;
-  color: #333;
-  font-family: 'Helvetica', sans-serif;
-	font-size: 26px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
-	
-.flexsearch--submit {
-  position: absolute;
-	right: 0;
-	top: 0;
-	display: block;
-	width: 60px;
-	height: 60px;
-  padding: 0;
-  border: none;
-	margin-top: 20px; /* margin-top + border-width */
-  margin-right: 5px; /* border-width */
-	background: transparent;
-  color: #888;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 40px;
-  line-height: 60px;
-}
-
-.flexsearch--input:focus {
-  outline: none;
-  border-color: #333;
-}
-
-.flexsearch--input:focus.flexsearch--submit {
- 	color: #333; 
-}
-
-.flexsearch--submit:hover {
-  color: #333;
-  cursor: pointer;
-}
-
-::-webkit-input-placeholder {
-	color: #888;  
-}
-
-input:-moz-placeholder {
-  color: #888
-}
 
 #div-table{
 	width: 55%;
@@ -156,16 +64,10 @@ input:-moz-placeholder {
 	margin-right: 55%;
 }
 
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
 
   #main-editor{
   	margin-left: 20%;
   	margin-top: -600px;
-  	margin-bottom: 20%;
   }
   #para-asunto{
   	margin: 30%;
@@ -178,12 +80,12 @@ input:-moz-placeholder {
 	margin-top: 15%;
   }
 
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
- 
-#footer {
-    width: 100%;
-    height: 71px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+ main {
+    flex: 1 0 auto;
+  }

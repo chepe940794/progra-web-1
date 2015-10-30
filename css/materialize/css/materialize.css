@@ -88,7 +88,7 @@
   color: #E57373 !important; }
 
 .red.lighten-1 {
-  background-color: #EF5350 !important; }
+  background-color: #b71c1c !important; }
 
 .red-text.text-lighten-1 {
   color: #EF5350 !important; }
@@ -2177,7 +2177,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #d32f2f; }
+  background-color: #b71c1c; }
   footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
@@ -5258,7 +5258,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #d32f2f;
+  background-color: #b71c1c;
   width: 100%;
   height: 56px;
   line-height: 56px; }
