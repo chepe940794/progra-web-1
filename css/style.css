@@ -89,3 +89,28 @@
  main {
     flex: 1 0 auto;
   }
+
+  #img-msj-open{
+  	width: 70px;
+  	margin-right: 45%;
+  	margin-top: -150px;
+
+  }
+
+  #text-img-msj-open{
+  	margin-top: -150px;
+  	margin-right: 15%;
+  }
+
+  .p-correo-acomodar{
+  	margin-right: 8%;
+
+  }
+  #pp{
+  	text-align: left;
+  	margin-left: 25%;
+  }
+
+  #img-loader-email{
+  	width: 200px;
+  }
