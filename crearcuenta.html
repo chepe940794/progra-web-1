@@ -1,97 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Crea tu cuenta</title>
-	<meta charset="utf-8">
-    <link rel="stylesheet" href="menu/css/reset.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="menu/css/style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="menu/css/grid.css" type="text/css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="file:///C:/Users/juan%20jo/Desktop/proyecto%201%20web/css/materialize/css/materialize.css"/>
-    <link type="text/css" rel="stylesheet" href="style_mail.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../proyecto 1 web/css/materialize/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../proyecto 1 web/js/application.js"></script>
-</head>
-<body>
-<center><h3>Cree su cuenta Jmail</h3></center><br>
- <div class="row">
-    <form class="col s12">  
-      <div class="row">
-        <div class="input-field col s12">
-        <i class="material-icons prefix">account_circle</i>
-          <input id="first_name" type="text" class="validate" name="nombre">
-          <label for="name">Nombre</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-        <i class="material-icons prefix">account_circle</i>
-          <input id="last_name" type="text" class="validate" name="apellido">
-          <label for="last_name">Apellido</label>
-        </div>
-      </div>
-       <div class="row">
-        <div class="input-field col s12">
-        <i class="material-icons prefix">email</i>
-          <input id="email" type="email" class="validate" name="email">
-          <label for="email">Email</label>
-        </div>
-      </div>
-       <div class="row">
-        <div class="input-field col s12">
-        <i class="material-icons prefix">vpn_key</i>
-          <input id="password" type="password" class="validate" name="password">
-          <label for="password">Contraseña</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-        <i class="material-icons prefix">vpn_key</i>
-          <input id="password" type="password" class="validate">
-          <label for="password">Contraseña</label>
-        </div>
-      </div>
-      <div>
-      		<i class="material-icons prefix">account_circle</i>
-          <label>Seleccione su sexo</label>
-    		<select class="browser-default">
-     			 <option value="" disabled selected>Elija su opción</option>
-     			 <option value="1">Hombre</option>
-      			 <option value="2">Mujer</option>
-     			 <option value="3">No lo sabe aún</option>
-    		</select>
-    </div><br>
-    <div>
-   		 <i class="material-icons prefix">today</i>
-    	<label>Fecha de nacimiento</label>
-    	<input type="date" class="datepicker">
-    	<script type="text/javascript">
-    			$('.datepicker').pickadate({
-    					selectMonths: true, // Creates a dropdown to control month
-   						 selectYears: 15 // Creates a dropdown of 15 years to control year
-  						});
-    	</script>
-    </div>
-
-    <form action="#">
-    
-    <p>
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">He leído y acepto los términos y condiciones de uso</label>
-    </p>
-   
-  </form>
-    </form>
-
-    <center><div>
-
-    <a href="../proyecto 1 web/index.html" class="btn waves-effect waves-light" type="button" id="save-client"  onclick="saveToLocalStorage($('input#first_name').val(), $('input#last_name').val(), $('input#email').val(), $('input#password').val());">Enviar</a>
-    </div></center>
-  </div>
-
-  </button>
-</body>
+	<head>
+		<title>Crea tu cuenta</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="menu/css/reset.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="menu/css/style.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="menu/css/grid.css" type="text/css" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="file:///C:/Users/juan%20jo/Desktop/proyecto%201%20web/css/materialize/css/materialize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../proyecto 1 web/css/materialize/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../proyecto 1 web/js/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<center><h3>Cree su cuenta Jmail</h3></center><br>
+		<div class="row">
+			<form class="col s12">
+				
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">email</i>
+						<input id="email" type="email" class="validate" name="email">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">vpn_key</i>
+						<input id="password" type="password" class="validate" name="password">
+						<label for="password">Contraseña</label>
+					</div>
+				</div>
+				
+				<br>
+				
+			</form>
+			<center><div>
+				<button  class="btn waves-effect waves-light" id="save_client" >Registrarse</button>
+			</div>
+			</center>
+		</div>
+		</button>
+	</body>
+	<script type="text/javascript" src="../proyecto 1 web/js/application.js"></script>
 </html>
