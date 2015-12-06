@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Jmail</title>
 	<meta charset="utf-8">
-    <link rel="stylesheet" href="menu/css/reset.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="menu/css/style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="menu/css/grid.css" type="text/css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="file:///C:/Users/juan%20jo/Desktop/proyecto%201%20web/css/materialize/css/materialize.css"/>
-    <link type="text/css" rel="stylesheet" href="style_mail.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../proyecto 1 web/css/materialize/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="menu/css/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="menu/css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="menu/css/grid.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet'
+	type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/materialize/css/materialize.css"
+	/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="css/materialize/js/materialize.min.js"></script>
 </head>
+
 <body id="page1">
-<nav class="red lighten-1">
+	<nav class="red lighten-1">
 		<div class="nav-wrapper">
 			<a href="#" class="brand-logo">Jmail</a>
 			<a href="#" data-activates="mobile-nav" class="right button-collapse"><i class="mdi-navigation-more-vert"></i></a>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="../proyecto 1 web/nuevo.html"><img src="../proyecto 1 web/img/correo.png" id="img-correo"> Nuevo</a></li>
-				<li><a href="../proyecto 1 web/index.html"><img src="../proyecto 1 web/img/log.png" id="img-log-off"> Cerrar sesión</a></li>
+				<li>
+					<a href="nuevo.html">
+						<img src="img/correo.png" id="img-correo"> Nuevo</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<img src="img/log.png" id="img-log-off"> Cerrar sesión</a>
+				</li>
 			</ul>
 			<div class="right">
 				<form>
@@ -33,62 +42,56 @@
 				</form>
 			</div>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="#"><img src="../proyecto 1 web/img/delete.png" id="img-log-off"> Eliminar</a></li>
+				<li>
+					<a href="#">
+						<img src="img/delete.png" id="img-log-off"> Eliminar</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
-	
-</header>
+	</header>
+	<section id="menu-margin">
+		<div class="main">
+			<div class="container_24">
+				<div class="wrapper">
+					<div class="grid_24">
+						<div class="container-1 border-1">
+							<div class="grid_6 suffix_1 alpha">
+								<ul class="list-1">
+									<li><a href="enviados.html">Enviados</a></li>
+									<li><a href="eliminados.html">Eliminados</a></li>
+									<li><a href="borrador.html">Borrador</a></li>
+								</ul>
+							</div>
 
-<section id="menu-margin">
-        <div class="main">
-            <div class="container_24">
-            	<div class="wrapper">
-                    <div class="grid_24">
-                        <div class="container-1 border-1">
-                        <div class="grid_6 suffix_1 alpha">
-                            <ul class="list-1">
-                                <li><a href="../proyecto 1 web/principalM.html">Recibidos</a></li>
-                                <li><a href="../proyecto 1 web/enviados.html">Enviados</a></li>
-                                <li><a href="../proyecto 1 web/eliminados.html">Eliminados</a></li>
-                                <li><a href="../proyecto 1 web/borrador.html">Borrador</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="clear"></div>
-                    </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </section>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
 
-    <center>
-    	<div id="div-table">
-	<table class="striped">
- <thead>
-<tr>
-  <th id="b2">Remitente</th>
-  <th id="b2">Mensaje</th>
-  <th id="b2">Fecha</th>
-</tr>
- </thead>
+			</div>
+		</div>
+	</section>
 
-<tr>
-  <td><p>Bandeja limpia...</p></td>
-  <td></td>
-  <td></td>
-</tr>
-
-
-
-</table>
-</div>
-</center>
-
-
-
-
+	<center>
+		<div id="div-table">
+			<table class="striped">
+				<thead>
+					<tr>
+						<th id="b2">Remitente</th>
+						<th id="b2">Mensaje</th>
+						<th id="b2">Fecha</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>
+						<p>Bandeja limpia...</p>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</center>
 </body>
 </html>

@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Editar correo</title>
 	<meta charset="utf-8">
-    <link rel="stylesheet" href="menu/css/reset.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="menu/css/style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="menu/css/grid.css" type="text/css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel="stylesheet" href="file:///C:/Users/juan%20jo/Desktop/proyecto%201%20web/css/materialize/css/materialize.css"/>
-    <link type="text/css" rel="stylesheet" href="style_mail.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="../proyecto 1 web/ckeditor/ckeditor.js"></script>
-    <script src="../proyecto 1 web/ckeditor/samples/js/sample.js"></script>
-    <link rel="stylesheet" href="../proyecto 1 web/ckeditor/samples/css/samples.css">
-    <link rel="stylesheet" href="toolbarconfigurator/lib/codemirror/neo.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../proyecto 1 web/css/materialize/js/materialize.min.js"></script>
-  
+	<link rel="stylesheet" href="menu/css/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="menu/css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="menu/css/grid.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet'
+	type='text/css'>
+	<link type="text/css" rel="stylesheet" href="css/materialize/css/materialize.css"
+	/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="ckeditor/ckeditor.js"></script>
+	<script src="ckeditor/samples/js/sample.js"></script>
+	<link rel="stylesheet" href="ckeditor/samples/css/samples.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="css/materialize/js/materialize.min.js"></script>
+
 </head>
+
 <body id="page1 main">
-<nav class="red lighten-1">
+	<nav class="red lighten-1">
 		<div class="nav-wrapper">
 			<a href="#" class="brand-logo">Jmail</a>
 			<a href="#" data-activates="mobile-nav" class="right button-collapse"><i class="mdi-navigation-more-vert"></i></a>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="../proyecto 1 web/borradorenviandoemail.html"><img src="../proyecto 1 web/img/correo.png" id="img-correo"> Enviar</a></li>
-        <li><a href="../proyecto 1 web/index.html"><img src="../proyecto 1 web/img/log.png" id="img-log-off"> Cerrar sesión</a></li>
+				<li>
+					<a href="borradorenviandoemail.html">
+						<img src="img/correo.png" id="img-correo"> Enviar</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<img src="img/log.png" id="img-log-off"> Cerrar sesión</a>
+				</li>
 			</ul>
 			<div class="right">
 				<form>
@@ -36,77 +44,74 @@
 					</div>
 				</form>
 			</div>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="../proyecto 1 web/eliminarborrador.html"><img src="../proyecto 1 web/img/delete.png" id="img-log-off"> Eliminar</a></li>
-      </ul>
+			<ul class="right hide-on-med-and-down">
+				<li>
+					<a href="eliminarborrador.html">
+						<img src="img/delete.png" id="img-log-off"> Eliminar</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
 
-<section id="menu-margin">
-        <div class="main">
-            <div class="container_24">
-            	<div class="wrapper">
-                    <div class="grid_24">
-                        <div class="container-1 border-1">
-                        <div class="grid_6 suffix_1 alpha">
-                            <ul class="list-1">
-                                <li><a href="../proyecto 1 web/principalM.html">Recibidos</a></li>
-                                <li><a href="../proyecto 1 web/enviados.html">Enviados</a></li>
-                                <li><a href="../proyecto 1 web/eliminados.html">Eliminados</a></li>
-                                <li><a href="../proyecto 1 web/borrador.html">Borrador</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="clear"></div>
-                    </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </section>
+	<section id="menu-margin">
+		<div class="main">
+			<div class="container_24">
+				<div class="wrapper">
+					<div class="grid_24">
+						<div class="container-1 border-1">
+							<div class="grid_6 suffix_1 alpha">
+								<ul class="list-1">
+									<li><a href="enviados.html">Enviados</a></li>
+									<li><a href="eliminados.html">Eliminados</a></li>
+									<li><a href="borrador.html">Borrador</a></li>
+								</ul>
+							</div>
 
- <center>
-  <div class="row" id="para-asunto">
-    <form class="col s12">
-   
-       
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate" value="quejas@wowrean.com">
-          <label for="email">Para</label>
-        </div>
-     <div class="row">
-        <div class="input-field col s12">
-          <input id="text" type="text" class="validate" value="hola">
-          <label for="password">Asunto</label>
-        </div>
-      </div>
-      </div>
-    </form>
-  </div>
-<main>
-  
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
 
-
-  <div id="main-editor">
-    <div class="grid-container">
-      <div class="grid-width-100">
-        <div id="editor">
-          <textarea  class="form-control" rows="15"> Señores de wow rean....</textarea>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-  initSample();
-</script>
-</main>
-
- </center>
-
-
-
+			</div>
+		</div>
+	</section>
+	<center>
+		<div class="row" id="para-asunto">
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="destino" type="text" class="validate" value="">
+					<label for="destino">Para</label>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="asunto" type="text" class="validate" value="">
+						<label for="asunto">Asunto</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main>
+			<div id="main-editor">
+				<div class="grid-container">
+					<div class="grid-width-100">
+						<div id="editor">
+							<textarea class="form-control" rows="15"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				initSample();
+			</script>
+		</main>
+	</center>
 </body>
+<script type="text/javascript" src="js/application.js"></script>
+<script>
+	CKEDITOR.on("instanceReady", function()
+	{
+		setEditarData();
+	})
+</script>
+
 </html>
