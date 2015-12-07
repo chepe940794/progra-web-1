@@ -1,3 +1,4 @@
+//crea usuarios
 $('#save_client').click(function() {
   console.log('Registrar usuario');
   var usuario = document.getElementById("email").value;
@@ -15,6 +16,7 @@ $('#save_client').click(function() {
 
 });
 
+//valida usuarios para iniciar sesion
 $('#iniciar_sesion').click(function() {
 
   var user = document.getElementById("email").value;
@@ -28,6 +30,7 @@ $('#iniciar_sesion').click(function() {
 });
 
 
+//envia los datos a enviados despues de crear el correo
 $('#enviar_correo').click(function() {
   var destino = document.getElementById("correo_destino").value;
   var asunto = document.getElementById("asunto").value;
@@ -48,6 +51,7 @@ $('#enviar_correo').click(function() {
   }
 });
 
+//guarda el correo y lo envia a borrador
 $('#guardar_correo').click(function() {
   var destino = document.getElementById("correo_destino").value;
   var asunto = document.getElementById("asunto").value;
@@ -67,6 +71,7 @@ $('#guardar_correo').click(function() {
 
   }
 });
+
 
 function getEnviados() {
   var enviados = JSON.parse(localStorage.getItem('enviados'));
@@ -89,7 +94,7 @@ function setSalida(datos) {
 }
 
 
-
+//muestra y crea las tablas en enviados con los correos nuevos
 function imprimirEnviados() {
   var enviados = getEnviados();
   var tableBody = $('#tEnviados').find('tbody');
@@ -102,7 +107,7 @@ function imprimirEnviados() {
       '<td id="b1">' + enviado.contenido + '</td>' +
       '<td id="b1">' + enviado.fecha + '</td>' +
       '<td id="b1"><button id="eliminar_correo_enviados" data-id="' +
-      enviado.id + '" class="">Eliminar</button></td></tr>';
+      enviado.id + '" class="waves-effect waves-light btn">Eliminar</button></td></tr>';
   });
 
   tableBody.empty();
@@ -110,6 +115,7 @@ function imprimirEnviados() {
 
 }
 
+//muestra en borrador los correos guardados
 function imprimirSalida() {
   var salida = getSalida();
   var tableBody = $('#tSalida').find('tbody');
@@ -122,21 +128,22 @@ function imprimirSalida() {
       '<td id="b1">' + salida.contenido + '</td>' +
       '<td id="b1">' + salida.fecha + '</td>' +
       '<td id="b1"><button id="editar_correo_salida" data-id="' + salida.id +
-      '" class="">Editar</button><button id="eliminar_correo_salida" data-id="' +
-      salida.id + '" class="">Eliminar</button></td></tr>';
+      '" class="waves-effect waves-light btn">Editar</button><button id="eliminar_correo_salida" data-id="' +
+      salida.id + '" class="waves-effect waves-light btn">Eliminar</button></td></tr>';
   });
 
   tableBody.empty();
   tableBody.append(body);
 }
 
-
+//button editar correo 
 $(document).delegate("#editar_correo_salida", "click", function() {
   var id = $(this).data('id');
   location = location = "editar.html?id=" + id;
 });
 
 $(document).delegate('#eliminar_correo_salida', "click", function() {
+	
   var id = $(this).data('id');
   var salida = getSalida();
   var datos = [];
@@ -148,7 +155,7 @@ $(document).delegate('#eliminar_correo_salida', "click", function() {
   setSalida(datos);
   imprimirSalida();
 });
-
+//elimina correos en enviados
 $(document).delegate('#eliminar_correo_enviados', "click", function() {
   var id = $(this).data('id');
   var enviados = getEnviados();
@@ -161,7 +168,7 @@ $(document).delegate('#eliminar_correo_enviados', "click", function() {
   setEnviados(datos);
   imprimirEnviados();
 });
-
+//carga lo que tenga destino, asunto y editor
 function setEditarData() {
 
   var salida = getSalida();
@@ -182,4 +189,26 @@ function setEditarData() {
 
 }
 
+//mueve los correos que se editen de borrador a enviados
+$('#mover_correo').click(function() {
 
+   var id = window.location.search.split('=')[1];
+ 
+
+  var salida = getSalida();
+  var enviados = getEnviados();
+  var newSalida = [];
+
+  salida.forEach(function(element,index){
+
+  	if(element.id != id){
+  		newSalida.push(element);
+  	}else{
+  		enviados.push(element);
+  	}
+  });
+
+  setSalida(newSalida);
+  setEnviados(enviados);
+  
+});
